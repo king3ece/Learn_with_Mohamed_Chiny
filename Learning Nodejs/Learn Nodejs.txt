@@ -1,0 +1,62 @@
+Chaine Youtube: Mohamed Chiny
+Playlist: Du JavaScript cote serveur
+
+Video1: Nodejs: Du JavaScript cote serveur
+
+Node js est un environement d'execution JavaScript. Il permet d'executer du JavaScript cote serveur
+
+Il permet de faire du backend, comme php, perl, ruby et autres
+Permet d'interpreter du JavaScript hors du navigateur
+
+XMLHttpRequest et API fetch permet d'envoyer des requetes vers le serveur grace a JavaScript
+
+Appel monte en charges c'est quand le nombre d'appel augmente de facon tres grande
+
+Les appels de requetes se font un a un: Plusieurs requetes peuvent etre envoyer mais chaque requette attendra la reponse de celui qui le precede avant d'avoir une reponse a son appel
+
+Traiter les requetes durant le temps mort du serveur(Par exemple quand le serveur va vouloir un enregistrement dans la base de donnees)
+
+Les avantages de nodejs:
+- Traiter les requetes en mode asynchrones
+- S'adapter mieux aux applications concurentes
+- Gere les montes en charges
+- Utilise JavaScript qui est aussi utilise pour le developpement front-end
+
+Le defi c'est que doit personnelement definir les requetes de serveurs et toutes les configurations
+
+Avec express nous pouvons creer notre serveux pour gerer notre application de facon perfomante et optimale
+
+
+Video2: Installation et mise en routes (Node.js ,NPM, NPX)
+
+NPM: Node Package Manager. Il permet d'installer, supprimer ou mettre a jour des packages
+Package: Programme supplementaire ajouter a notre environement pour qu'il puisse faire des enregistrments supplementaires.
+
+NPM, NPX: Gestionnaire de packages
+
+Pour verifier la version de node.js install
+
+```node --version```
+
+Pour verifier la version de notre gestionnaire
+
+```npm --version```
+
+```npx --version```
+
+Pour executer du JavaScript dans Node.js on tape la commande
+
+```node```
+
+Ici in n'est pas possible d'acceder au methodes ou fonctionnalites du DOM il est uniquement possible dans le navigateur
+
+Video3: Node.js - Créer un serveur HTTP et écouter les requêtes
+
+```netstat``` : Commande pour avoir des informations les connexions reseaux
+
+Pour ajouter un filtre
+
+```netstat -an |grep 8080``` : Pour bash
+```netstat -an | findstr :8080```: Pour le terminal Windows
+
+Code 500: Erreur interne du serveur
