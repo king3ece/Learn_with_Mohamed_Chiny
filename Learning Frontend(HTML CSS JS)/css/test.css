@@ -1,0 +1,182 @@
+/*@font-face {
+  font-family: ma_police;
+  src: url();
+}
+*/
+body {
+  margin: 20px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* text-align: center; */
+}
+/*
+* {
+  font-family: ma_police;
+}*/
+
+/*#madiv {
+  width: 300px;
+  height: 300px;
+  border: solid 1px #000;
+  background-color: blue;
+  margin: auto;
+  margin-top: 100px;
+  transition: all 0.5s ease;
+  box-shadow: -50px -50px 50px rgba(0, 0, 0, 0.3);
+}
+*/
+/*#madiv:hover {
+  /*transform-origin: 50% 50%;*/
+/* transform: translate(100px, 50px) scale(1.5); */
+/* transform: skew(30deg, 30deg); */
+/* transform: perspective(500px ) rotateX(45deg); */
+/*transform-origin: 0% 50%;
+   transform: perspective(500px ) rotateY(45deg);*/
+/*box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.3); /*la derniere valeur c'est la transition de l'ombre*/
+/*  transition: all 0.5s ease;
+}*/
+
+/* img {
+  margin: 20px;
+  width: 600px;
+  height: auto;
+}
+*/
+/*#modifiee {
+  /* filter: grayscale(100%); image en blanc-noir */
+/* filter: saturate(150%); intensifier les couleurs de l'image */
+/* filter: blur(5px); pour gerer le flou */
+/* filter: brightness(150%); luminiosite de l'image */
+/* filter: contrast(150%); exprimer la difference entre le noir et le blanc */
+/* filter: sepia(100%);retrouver les effets des anciens photographie en mode vintage */
+/*filter: invert(100%); inverser les couleurs de l'image*/
+/*ilter: hue-rotate(45deg); pour changer le teint des couleurs*/
+/*filter: drop-shadow(50px 50px 50px black); effet de ombre et portee
+}*/
+
+/*.container {
+  border: solid 2px #000;
+  min-height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  align-items: stretch;
+  flex-direction: column;
+}*/
+
+/*.items {
+  width: 500px;
+  height: 200px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: inline-block; 
+}*/
+/*.items:nth-child(1) {
+  background-color: #26d;
+  flex: 1;
+  order: 2;
+}
+.items:nth-child(2) {
+  background-color: #f80;
+  flex: 2;
+  order: 1;
+}
+.items:nth-child(3) {
+  background-color: #0a0;
+  flex: 1;
+  order: 3;
+}*/
+
+/* animation: slideIn 2s ease-in-out infinite; */
+
+/*.container {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #444;
+}
+
+.item:nth-child(1) {
+  animation-name: mon_animation1;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.item:nth-child(2) {
+  animation-name: mon_animation2;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+} /*Image cle, interpolation de mouvement en utilisant une regle at keyfran*/
+/*keyframes mon_animation1 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes mon_animation2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}*/
+nav {
+  display: flex;
+  align-items: flex-start;
+}
+
+nav > a {
+  display: inline-block;
+  width: 400px;
+  margin: 2px;
+  text-decoration: none;
+  padding: 20px;
+  border-bottom: solid 1px #000;
+  background-color: #eee;
+  color: #000;
+  transition: all 0.5s ease;
+}
+
+nav > a:hover {
+  padding: 20px;
+  border-bottom: solid 30px #000;
+  background-color: #aaa;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+/*inferieur ou egal a 768px*/
+/*media queries*/
+@media screen and (max-width: 768px) /*and(min-width: 255px) */ {
+  nav {
+    display: block;
+    /* align-items: flex-start; */
+  }
+  nav > a {
+    display: block;
+    width: auto;
+  }
+}
+
+/*1rem ---> 16px*/

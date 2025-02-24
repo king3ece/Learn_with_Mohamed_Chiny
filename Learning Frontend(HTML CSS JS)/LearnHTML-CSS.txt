@@ -1,0 +1,294 @@
+Chaine Youtube: Mohamed Chiny
+Playlist: Les bases du languages HTML
+
+Video1: Bases
+
+-Editeur de texte
+-Navigateur
+Les balises ont es signification que les navigateurs comprennent bien
+-Balise ouvrantes
+-Balises fermantes
+-Premiere balise ouvrir, derniere balise a fermé 
+-Balise auto-fermante ou orphelin
+-Les balises peuvent avoir des attributs
+-Tous ce qui commence par & est un mot clé 
+-En HTML les balises ne sont pas sensible a la casse
+
+Video2: Validation et compatibilité
+
+Validateur:W3C
+
+Video3: 
+Conteneurs, images, liens hypertextes et listes
+
+Video4: Balises semantiques tableaux
+Div, header, footer, aside, article, nav, section, main et autres
+
+Video5:
+Formulaire...
+
+Video6:
+Video et audio
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Playlist: Cascading Style Sheets
+
+Video1: CSS C'est quoi et comment l'intégrer
+
+Video2: Les slecteurs
+Permet de viser une balise afin de lui attribuer un style.
+
+Pour eviter l'application d'un style general a un element il suffit de lui appliquer identifiant, pour faire l'application à un groupe d'éléments on peut utiliser une classes, un idemtifiant est uniques alors que on peut utiliser une classe pour divers éléments.
+
+Divers moyens d'utiliser les selecteurs
+
+Video3: Les couleurs
+
+Divers manières d'utiliser les couleurs.
+
+Video4: Les arrière-plans
+
+Toutes les propriétés possible du background
+Image, couleur, position, attachment...
+
+Video5: Texte et polices
+
+Les propriétés et sous-porprietes de mise en forme des textes
+text-align, text-decoration, text-indent, text-transform
+
+letter-spacing
+font-style, font-family, font-size, font-variant, font-weight, 
+
+
+Regle at
+@font-face {
+	font-fami;y:nom_de_la_police
+	url: ("../fefe/efe.font")
+	}
+
+Video6: Bordures, dimension et marges
+
+border: style, taille, couleur
+border-raduis: Pour faire l'arrondissement
+margin c'est la marge extérieur à l'élément
+padding: c'est la marge interior à l'élément
+
+Video7: Flottement et positionnement
+ Les priorités (left, right, z-index) ne sont utilisables que lorsque on utilise la propriété position
+position: relative: est un positionnent qui depend de la valeur de la position initiale de l'élément
+
+
+Video8: Pseudo-classes, pseud-elements
+Pseudo-classes: Permet de cible un etat particulier d'une element ou objet
+Pseudo-elements: permettent de cible une partie ou une zone particulière de l'objet 
+
+*-*-*-*-*-**-*-*-*-*-*
+Pseudo-classes	 *-*-*
+*-*-*-*-*-**-*-*-*-*-*
+a:link
+a:active
+a:visited
+a:hover
+
+input:focus: Permet de faire le changement de la zone de saisi au moment de la saisie 
+
+section>article:(first-child, last-child, nth-childl(numero de la position))
+
+
+*-*-*-*-*-**-*-*-*-*-*
+Pseudo element	 *-*-*
+*-*-*-*-*-**-*-*-*-*-*
+
+.text::first-line: pour colorier la premiere ligne de l'élément texte de classe text
+.text::first-letter:
+
+
+::before{content}: juste avant le texte, on ajoute un element qui est fourni par content
+::after{content}:juste après le texte, on ajoute un element qui est fourni par content
+
+
+Video9: Listes, débordement et opacité
+`
+liste-style-type, pour changer le type de listing de la balise liste de ul
+liste-style-position: inside et outside par rapport a li
+liste-style-image: pour utiliser des images pour les marques des listes
+
+Débordement:
+overflow: hidden, visible, auto, scroll
+
+*-*-*-*-*-*-*
+opacité   *-*
+*-*-*-*-*-*-*
+
+img[src=url]--->pour pointer vers une images particulier
+opcity: pour gérer l'opacité, grace a elle on peut rendre des images translucide
+
+Video10 Les transitions
+
+transition-property: background, border et all
+transition-duration: la durée de la transition
+transition-timing: ease pour la cadence de la transition
+transition-delay: 1s pour dire attend une seconde avant de commencer
+transition: all 1s ease
+
+interpolation de mouvement: on a besoin juste de deux etats pour realiser une animation 
+
+Video11: Transformation et ombre portée
+
+#madiv {
+  width: 300px;
+  height: 300px;
+  border: solid 1px #000;
+  background-color: blue;
+  margin: auto;
+  margin-top: 100px;
+  transition: all 0.5s ease;
+  box-shadow: -50px -50px 50px rgba(0, 0, 0, 0.3);
+}
+
+#madiv:hover {
+  /*transform-origin: 50% 50%;*/
+  /* transform: translate(100px, 50px) scale(1.5); */
+  /* transform: skew(30deg, 30deg); */
+  /* transform: perspective(500px ) rotateX(45deg); */
+  /*transform-origin: 0% 50%;
+   transform: perspective(500px ) rotateY(45deg);*/
+  box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.3); /*la derniere valeur c'est la transition de l'ombre*/
+  transition: all 0.5s ease;
+}
+
+
+
+Video12: Les filtres
+ <img src="night-session.jpg" alt="bike" id="originale">
+ <img src="night-session.jpg" alt="bike" id="modifiee">
+
+img {
+  margin: 20px;
+  width: 600px;
+  height: auto;
+}
+
+#modifiee {
+  /* filter: grayscale(100%); image en blanc-noir */
+  /* filter: saturate(150%); intensifier les couleurs de l'image */
+  /* filter: blur(5px); pour gerer le flou */
+  /* filter: brightness(150%); luminiosite de l'image */
+  /* filter: contrast(150%); exprimer la difference entre le noir et le blanc */
+  /* filter: sepia(100%);retrouver les effets des anciens photographie en mode vintage */
+  /*filter: invert(100%); inverser les couleurs de l'image*/
+  /*ilter: hue-rotate(45deg); pour changer le teint des couleurs*/
+  /*filter: drop-shadow(50px 50px 50px black); effet de ombre et portee*/
+}
+
+
+Video13: Les flexbox
+
+Les flexbox sont des conteneurs qui permettent de controller le débordement et l'alignement des objets qui sont intégrés dedans
+
+<div class="container">
+      <div class="items">DIV1</div>
+      <div class="items">DIV2</div>
+      <div class="items">DIV3</div>
+    </div>
+
+.container {
+  border: solid 2px #000;
+  min-height: 400px;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.items {
+  /* width: 500px; */
+  /* height: 200px; */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: inline-block; */
+}
+.items:nth-child(1) {
+  background-color: #26d;
+  flex: 1;
+  order: 2;
+}
+.items:nth-child(2) {
+  background-color: #f80;
+  flex: 2;
+  order: 1;
+}
+.items:nth-child(3) {
+  background-color: #0a0;
+  flex: 1;
+  order: 3;
+}
+
+Video14
+
+  <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
+.container {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #444;
+}
+
+.item:nth-child(1) {
+  animation-name: mon_animation1;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.item:nth-child(2) {
+  animation-name: mon_animation2;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+} /*Image cle, interpolation de mouvement en utilisant une regle at keyfran*/
+@keyframes mon_animation1 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes mon_animation2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+Video15: Les media queries (le responsive design)
+Tout se trouve dans le code test pour apprendre et comprendre
+
+

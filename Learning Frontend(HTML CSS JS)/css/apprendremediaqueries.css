@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.parent {
+  display: flex;
+}
+
+.enfant {
+  width: 50%;
+  height: 200px;
+  background-color: black;
+}
+
+.enfant:nth-child(2) {
+  background-color: red;
+}
+.onlymobile {
+  display: none;
+}
+
+@media (max-width: 390px) {
+  .parent {
+    flex-direction: column;
+  }
+  .enfant {
+    width: 100%;
+  }
+  .onlymobile {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+  }
+}
